@@ -30,6 +30,9 @@ def mnod1():
     f1 = int(text.text())
     text.setText("")
     dia = 4
+def clear1():
+    text.setText("")
+    
 
 def one1():
     text.setText(text.text()+"1")
@@ -76,6 +79,9 @@ dilena.setText("/")
 
 mnod=QPushButton()
 mnod.setText("*")
+
+clear=QPushButton()
+clear.setText("clear")
 
 equal = QPushButton()
 equal.setText("=")
@@ -137,6 +143,7 @@ hl2.addWidget(equal)
 hl2.addWidget(vidni)
 hl2.addWidget(dilena)
 hl2.addWidget(mnod)
+hl2.addWidget(clear)
 
 hl3.addWidget(one)
 hl3.addWidget(two)
@@ -170,6 +177,7 @@ suma.clicked.connect(suma1)
 vidni.clicked.connect(vidni1)
 dilena.clicked.connect(dilena1)
 mnod.clicked.connect(mnod1)
+clear.clicked.connect(clear1)
 one.clicked.connect(one1)
 two.clicked.connect(two1)
 three.clicked.connect(three1)
